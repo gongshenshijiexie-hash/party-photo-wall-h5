@@ -39,6 +39,18 @@ python3 -m http.server 8765
 
 http://127.0.0.1:8765
 
+## 构建离线单文件
+
+在项目根目录运行：
+
+```bash
+python3 build_standalone.py
+```
+
+构建结果为 `dist/party-photo-wall.html`。该文件会内嵌项目的 CSS、JavaScript
+和四张 PNG 图片，可以通过 `file://` 直接离线运行。生成文件仅作为最终交付物，
+不提交到项目仓库。
+
 ## 详细需求
 
 见：
